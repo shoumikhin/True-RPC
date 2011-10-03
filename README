@@ -1,0 +1,3 @@
+Cross-platform general purpose C++ RPC library. Completely reenterable and thread safe with tracking
+the calling thread on both sides.
+Inspired by http://stackoverflow.com/questions/3061569/cross-platform-general-purpose-c-rpc-library .
