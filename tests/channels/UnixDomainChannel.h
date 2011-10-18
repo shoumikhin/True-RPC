@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../rpc/Channel.h"
+#include <truerpc/Channel.h>
 
 #include <boost/utility.hpp>
 #include <boost/thread/mutex.hpp>

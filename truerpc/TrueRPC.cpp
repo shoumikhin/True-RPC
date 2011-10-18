@@ -1,4 +1,4 @@
-#include "RPC.h"
+#include "TrueRPC.h"
 
 //==================================================================================================
 RPC::RPC(IStub *stub)
@@ -179,9 +179,9 @@ Data const *RPC::getResponse(void * const sync)
 
     for (ResponseList::iterator i = _responseList.begin(); end != i; ++i)
     {
-        Sync const *sync = reinterpret_cast<Sync const *>((*i)->data());
+        Sync const *s = reinterpret_cast<Sync const *>((*i)->data());
 
-        if (sync == sync->receiver)
+        if (sync == s->receiver)
         {
             ret = *i;
             _responseList.erase(i);
