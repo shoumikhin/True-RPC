@@ -1,43 +1,17 @@
 QT          -=  core gui
 
-TARGET      =   TestRPC
+TARGET      =   test_channels
 
 TEMPLATE    =   app
 
-CONFIG      +=  link_pkgconfig
-
-PKGCONFIG   +=  gtk+-2.0
+CONFIG      +=
 
 DEFINES     +=
 
-INCLUDEPATH +=\
-                .
+INCLUDEPATH +=
 
-HEADERS     +=\
-                common/Protocol.h\
-                truerpc/Channel.h\
-                truerpc/Data.h\
-                truerpc/Packet.h\
-                truerpc/Requester.h\
-                truerpc/Responder.h\
-                truerpc/Router.h\
-                truerpc/Stub.h\
-                truerpc/TrueRPC.h\
-                slave/SlaveChannel.h\
-                slave/SlaveStub.h\
-                master/MasterChannel.h\
-                master/MasterStub.h
+HEADERS     += \
+                UnixDomainChannel.h
 
 SOURCES     += \
-                truerpc/TrueRPC.cpp\
-                master/MasterChannel.cpp\
-                master/MasterStub.cpp\
-                slave/SlaveChannel.cpp\
-                slave/SlaveStub.cpp \
-                tests/slave.cpp
-
-unix\
-{
-LIBS        += \
-                -lboost_thread-mt
-}
+                UnixDomainChannel.cpp

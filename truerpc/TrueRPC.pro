@@ -1,6 +1,6 @@
 QT          -=  core gui
 
-TARGET      =   TestRPC
+TARGET      =   truerpc
 
 TEMPLATE    =   lib
 
@@ -12,17 +12,17 @@ INCLUDEPATH +=\
                 .
 
 HEADERS     +=\
-                truerpc/Channel.h\
-                truerpc/Data.h\
-                truerpc/Packet.h\
-                truerpc/Requester.h\
-                truerpc/Responder.h\
-                truerpc/Router.h\
-                truerpc/Stub.h\
-                truerpc/TrueRPC.h
+                Channel.h\
+                Data.h\
+                Packet.h\
+                Requester.h\
+                Responder.h\
+                Router.h\
+                Stub.h\
+                TrueRPC.h
 
 SOURCES     += \
-                truerpc/TrueRPC.cpp
+                TrueRPC.cpp
 
 unix\
 {
