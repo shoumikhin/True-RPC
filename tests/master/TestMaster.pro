@@ -8,14 +8,17 @@ CONFIG      +=  link_pkgconfig
 
 PKGCONFIG   +=  gtk+-2.0
 
-DEFINES     +=
+DEFINES     +=  BOOST_TEST_THREAD_SAFE
 
 INCLUDEPATH += \
+                ../..\
                 ../channels
 
 HEADERS     += \
-                UnixDomainChannel.h
+                UnixLocalChannel.h
 
 SOURCES     += \
                 master.cpp\
-                UnixDomainChannel.cpp
+                ../channels/UnixLocalChannel.cpp
+
+LIBS        += -lboost_unit_test_framework -lmsgpack

@@ -11,7 +11,7 @@ DEFINES     +=
 INCLUDEPATH +=
 
 HEADERS     += \
-                UnixDomainChannel.h
+                UnixLocalChannel.h
 
 SOURCES     += \
-                UnixDomainChannel.cpp
+                UnixLocalChannel.cpp

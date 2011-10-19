@@ -19,10 +19,10 @@ HEADERS     +=\
                 Responder.h\
                 Router.h\
                 Stub.h\
-                TrueRPC.h
+                truerpc.h
 
 SOURCES     += \
-                TrueRPC.cpp
+                truerpc.cpp
 
 unix\
 {
